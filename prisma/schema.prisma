@@ -11,23 +11,25 @@ datasource db {
 }
 
 model Pizza {
-  id          String @id @default(auto()) @map("_id") @db.ObjectId
-  title       String @unique
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  title       String  @unique
   image       String
-  ingredients String
+  description String?
   price       Int
 }
 
 model Drink {
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
-  title String @unique
-  image String
-  price Int
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  title       String  @unique
+  image       String
+  description String?
+  price       Int
 }
 
 model Sauce {
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
-  title String @unique
-  image String
-  price Int
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  title       String  @unique
+  image       String
+  description String?
+  price       Int
 }
