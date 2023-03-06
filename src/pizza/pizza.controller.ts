@@ -3,7 +3,7 @@ import { Controller, Get, Param } from '@nestjs/common'
 import { Pizza } from '@prisma/client'
 import { PizzaService } from './pizza.service'
 
-@Controller('pizzas')
+@Controller('pizza')
 export class PizzaController {
   constructor(private readonly pizzaService: PizzaService) {}
 

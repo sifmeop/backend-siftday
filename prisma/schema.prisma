@@ -14,22 +14,25 @@ model Pizza {
   id          String  @id @default(auto()) @map("_id") @db.ObjectId
   title       String  @unique
   image       String
-  description String?
+  description String
   price       Int
+  note        String?
 }
 
 model Drink {
   id          String  @id @default(auto()) @map("_id") @db.ObjectId
   title       String  @unique
   image       String
-  description String?
+  description String
   price       Int
+  note        String?
 }
 
 model Sauce {
   id          String  @id @default(auto()) @map("_id") @db.ObjectId
   title       String  @unique
   image       String
-  description String?
+  description String
   price       Int
+  note        String?
 }

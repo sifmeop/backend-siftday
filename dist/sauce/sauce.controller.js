@@ -40,7 +40,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], SauceController.prototype, "getById", null);
 SauceController = __decorate([
-    (0, common_1.Controller)('sauces'),
+    (0, common_1.Controller)('sauce'),
     __metadata("design:paramtypes", [sauce_service_1.SauceService])
 ], SauceController);
 exports.SauceController = SauceController;

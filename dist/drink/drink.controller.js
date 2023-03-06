@@ -41,7 +41,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], DrinkController.prototype, "getById", null);
 DrinkController = __decorate([
-    (0, common_1.Controller)('drinks'),
+    (0, common_1.Controller)('drink'),
     __metadata("design:paramtypes", [drink_service_1.DrinkService])
 ], DrinkController);
 exports.DrinkController = DrinkController;

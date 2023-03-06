@@ -40,7 +40,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], PizzaController.prototype, "getById", null);
 PizzaController = __decorate([
-    (0, common_1.Controller)('pizzas'),
+    (0, common_1.Controller)('pizza'),
     __metadata("design:paramtypes", [pizza_service_1.PizzaService])
 ], PizzaController);
 exports.PizzaController = PizzaController;

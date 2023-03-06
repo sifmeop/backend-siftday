@@ -2,7 +2,7 @@ import { Controller, Get, Param } from '@nestjs/common'
 import { Sauce } from '@prisma/client'
 import { SauceService } from './sauce.service'
 
-@Controller('sauces')
+@Controller('sauce')
 export class SauceController {
   constructor(private readonly sauceService: SauceService) {}
 
