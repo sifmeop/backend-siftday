@@ -7,7 +7,6 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const prismaService = app.get(prisma_service_1.PrismaService);
     await prismaService.enableShutdownHooks(app);
-    app.setGlobalPrefix('api');
     app.enableCors();
     await app.listen(5000);
 }
