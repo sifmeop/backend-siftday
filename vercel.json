@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "env": {
+    "DATABASE_URL": "mongodb+srv://sifmeop:cwQJELuedTjpLkuI@siftday.j6hvypl.mongodb.net/siftday?retryWrites=true&w=majority"
+  },
   "builds": [
     {
       "src": "src/main.ts",
