@@ -5,6 +5,7 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { DrinkModule } from './drink/drink.module'
 import { PizzaModule } from './pizza/pizza.module'
+import { PromoModule } from './promo/promo.module'
 import { SauceModule } from './sauce/sauce.module'
 
 @Module({
@@ -14,7 +15,8 @@ import { SauceModule } from './sauce/sauce.module'
     }),
     PizzaModule,
     DrinkModule,
-    SauceModule
+    SauceModule,
+    PromoModule
   ],
   controllers: [AppController],
   providers: [AppService]

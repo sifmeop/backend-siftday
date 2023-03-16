@@ -36,3 +36,8 @@ model Sauce {
   price       Int
   note        String?
 }
+
+model Promo {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+}

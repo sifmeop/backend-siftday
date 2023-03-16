@@ -14,6 +14,7 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const drink_module_1 = require("./drink/drink.module");
 const pizza_module_1 = require("./pizza/pizza.module");
+const promo_module_1 = require("./promo/promo.module");
 const sauce_module_1 = require("./sauce/sauce.module");
 let AppModule = class AppModule {
 };
@@ -25,7 +26,8 @@ AppModule = __decorate([
             }),
             pizza_module_1.PizzaModule,
             drink_module_1.DrinkModule,
-            sauce_module_1.SauceModule
+            sauce_module_1.SauceModule,
+            promo_module_1.PromoModule
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService]
