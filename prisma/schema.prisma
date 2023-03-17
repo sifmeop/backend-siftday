@@ -7,34 +7,34 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Pizza {
-  id          String  @id @default(auto()) @map("_id") @db.ObjectId
-  title       String  @unique
-  image       String
-  description String
-  price       Int
-  note        String?
-}
-
 model Drink {
   id          String  @id @default(auto()) @map("_id") @db.ObjectId
-  title       String  @unique
-  image       String
   description String
-  price       Int
+  image       String
   note        String?
+  price       BigInt
+  title       String  @unique
 }
 
-model Sauce {
+model Pizza {
   id          String  @id @default(auto()) @map("_id") @db.ObjectId
-  title       String  @unique
-  image       String
   description String
-  price       Int
+  image       String
   note        String?
+  price       BigInt
+  title       String  @unique
 }
 
 model Promo {
   id    String @id @default(auto()) @map("_id") @db.ObjectId
   title String
+}
+
+model Sauce {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  description String
+  image       String
+  note        String?
+  price       BigInt
+  title       String  @unique
 }
