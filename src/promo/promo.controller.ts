@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common'
-import type { Promo } from '@prisma/client'
+import { Promo } from '@prisma/client'
 import { PromoService } from './promo.service'
 
 @Controller('promo')
