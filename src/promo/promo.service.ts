@@ -1,27 +1,28 @@
 import { Injectable } from '@nestjs/common'
+import { Promo } from '@prisma/client'
 import { PrismaService } from 'src/prisma.service'
 
 @Injectable()
 export class PromoService {
   constructor(private prisma: PrismaService) {}
 
-  async getAll() {
+  async getAll(): Promise<Promo[]> {
     return this.prisma.promo.findMany()
   }
 
-  async checkPromo(title: string) {
+  async checkPromo(title: string): Promise<{ valid: boolean }> {
     try {
       const result = await this.prisma.promo.findFirst({
         where: { title }
       })
 
       if (!result) {
-        return { result: false }
+        return { valid: false }
       }
 
-      return { result: true }
+      return { valid: true }
     } catch (error) {
-      return { result: false }
+      return { valid: false }
     }
   }
 }

@@ -25,12 +25,12 @@ let PromoService = class PromoService {
                 where: { title }
             });
             if (!result) {
-                return { result: false };
+                return { valid: false };
             }
-            return { result: true };
+            return { valid: true };
         }
         catch (error) {
-            return { result: false };
+            return { valid: false };
         }
     }
 };
